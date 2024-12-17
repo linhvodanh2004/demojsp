@@ -1,0 +1,201 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 15, 2024, 12:50:25 AM
+    Author     : PIXEL
+*/
+.body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    width: 100vw;
+    background-color: #ffcc33;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.searchbar{
+    border: black solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 5px;
+    width: 500px;
+}
+
+/*Style horizontal navigation*/
+.main-menu ul li{
+    display: inline-block;
+}
+.main-menu {
+    background: silver;
+    height: 50px;
+    padding: 13px;
+}
+.main-menu ul li a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px;
+}
+.sub-menu {
+    display: none;
+    padding: 20px;
+}
+.main-menu li {
+    position: relative;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+}
+.main-menu li .sub-menu{
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 0;
+}
+.main-menu .sub-menu li {
+    display: block;
+    background: silver;
+    width: 250px;
+    padding: 20px 0;
+    border-bottom: grey solid 1px;
+}
+
+/*Style the animation banner*/
+.banner-container {
+    width: 100%;
+    max-width: 100vw; /* Change max-width as needed */
+    margin: 10px 0px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* 100% for each image */
+    height: 30%;
+    animation: slide 10s normal infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 30%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Keyframes for linear sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    58.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    91.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}*/
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.product-item img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-item p {
+    font-size: 16px;
+    color: #888;
+}
+
+.footer {
+    /* Background color similar to the image */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    color: #333;
+}
+
+.footer-section {
+    flex: 1;
+    padding-left: 50px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
